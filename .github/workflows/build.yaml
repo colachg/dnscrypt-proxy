@@ -40,8 +40,8 @@ jobs:
         uses: docker/metadata-action@v3
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-          flavor: |
-            latest=auto
+          tags: |
+            latest
 
       - name: Build and export to Docker
         uses: docker/build-push-action@v2
