@@ -3,12 +3,12 @@ name: build-image
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - '.github/workflows/*'
       - 'Dockerfile'
   schedule:
-   - cron: '0 0 * * 1'
+    - cron: '0 0 * * 1'
 
 
 env:
